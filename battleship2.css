@@ -1,0 +1,62 @@
+.container {
+    min-height: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.hit {
+    background: url('ship.png') no-repeat center center;;
+}
+
+.miss {
+    background: url('miss.png') no-repeat center center;;
+}
+
+body {
+    background-color: black;
+    height: 100vh;
+    margin: 0;
+    font-size: 25px;
+}
+
+div#messageArea {
+    position: absolute;
+    top: 20px;
+    color: rgb(83, 175, 19);
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+div#broad {
+    border-radius: 5px;
+    position: relative;
+    width: 1024px;
+    height: 863px;
+    margin: 0 auto;
+    background: url('board.jpg') no-repeat;
+}
+
+table {
+    position: absolute;
+    left: 173px;
+    top: 98px;
+    border-spacing: 0;
+}
+
+td {
+    width: 94px;
+    height: 94px;
+}
+
+td:hover {
+    background-color:rgba(83, 175, 19, 0.3);
+    cursor: pointer;
+}
+
+td.hit:hover, td.miss:hover {
+    background-color: rgba(83, 175, 19, 0);
+    cursor: default;
+}
